@@ -183,7 +183,7 @@ exports.LoadUtils = () => {
         }
         let quotedMsgOptions = {};
         if (options.quotedMessageId) {
-            let quotedMessage = window.Store.Msg.get(options.quotedMessageId);
+            let quotedMessage = await window.Store.Msg.get(options.quotedMessageId);
 
             // TODO remove .canReply() once all clients are updated to >= v2.2241.6
             const canReply = window.Store.ReplyUtils ? 
