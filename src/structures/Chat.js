@@ -1,4 +1,4 @@
-t'use strict';
+'use strict';
 
 const Base = require('./Base');
 const Message = require('./Message');
